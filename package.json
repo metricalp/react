@@ -1,6 +1,6 @@
 {
   "name": "@metricalp/react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Metricalp React integration library",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -9,6 +9,10 @@
     "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist",
     "clean": "rimraf dist",
     "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metricalp/react.git"
   },
   "author": "Metin Arslanturk",
   "license": "ISC",
