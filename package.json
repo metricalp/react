@@ -1,7 +1,7 @@
 {
   "name": "@metricalp/react",
-  "version": "1.0.1",
-  "description": "Metricalp React integration library",
+  "version": "1.0.2",
+  "description": "Metricalp React and NextJS integration library",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -14,6 +14,7 @@
     "type": "git",
     "url": "https://github.com/metricalp/react.git"
   },
+  "homepage": "https://www.metricalp.com",
   "author": "Metin Arslanturk",
   "license": "ISC",
   "devDependencies": {
