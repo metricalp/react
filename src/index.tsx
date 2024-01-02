@@ -38,6 +38,7 @@ export const METRICALP_SCREEN_VIEW_EV = 'screen_view';
 interface MetricalpProviderProps {
   children?: any;
   tid: string;
+  customEventEndpoint?: string;
   allowLocalhost?: boolean;
   allowCustomElmEvents?: boolean;
   disableAutoRouteCatch?: boolean;
@@ -47,6 +48,7 @@ interface MetricalpProviderProps {
 export const MetricalpReactProvider: React.FC<MetricalpProviderProps> = ({
   children = null,
   tid,
+  customEventEndpoint,
   allowLocalhost,
   allowCustomElmEvents,
   disableAutoRouteCatch,
@@ -56,6 +58,7 @@ export const MetricalpReactProvider: React.FC<MetricalpProviderProps> = ({
     removeOnUnmount: false,
     customAttributes: {
       'data-tid': tid,
+      'data-custom-event-endpoint': customEventEndpoint || undefined,
       'data-allow-localhost': allowLocalhost ? 'true' : 'false',
       'data-allow-custom-elm-events': allowCustomElmEvents ? 'true' : 'false',
       'data-disable-auto-route-catch': disableAutoRouteCatch ? 'true' : 'false',

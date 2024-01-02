@@ -4,7 +4,7 @@ export type UseScriptStatus = 'idle' | 'loading' | 'ready' | 'error';
 export interface UseScriptOptions {
   shouldPreventLoad?: boolean;
   removeOnUnmount?: boolean;
-  customAttributes?: Record<string, string>;
+  customAttributes?: Record<string, string | undefined>;
 }
 
 // Cached script statuses
@@ -66,7 +66,7 @@ export function useScript(
       scriptNode.setAttribute('data-status', 'loading');
       if (options?.customAttributes) {
         Object.entries(options?.customAttributes).forEach(([key, value]) => {
-          scriptNode?.setAttribute(key, value);
+          value !== undefined && scriptNode?.setAttribute(key, value);
         });
       }
       document.body.appendChild(scriptNode);
