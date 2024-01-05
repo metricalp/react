@@ -1,5 +1,6 @@
-# React
-[metricalp.com](https://www.metricalp.com) NextJS and React provider to make integration smooth. It works with Vite, CRA, NextJS 13 App Router, NextJS Pages Router and all React implementations.
+# Metricalp Official React & NextJS Integration Library
+
+[metricalp.com](https://www.metricalp.com) NextJS and React provider to make integration smooth. It works with Vite, CRA, NextJS 13 App Router, NextJS Pages Router and all React implementations. Please see official documentation pages of [React integration](https://metricalp.com/docs/react) and [NextJS Integration](https://metricalp.com/docs/nextjs)
 
 ## Installation
 
