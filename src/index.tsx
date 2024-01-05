@@ -39,6 +39,7 @@ interface MetricalpProviderProps {
   children?: any;
   tid: string;
   customEventEndpoint?: string;
+  customScriptUrl?: string;
   allowLocalhost?: boolean;
   allowCustomElmEvents?: boolean;
   disableAutoRouteCatch?: boolean;
@@ -49,12 +50,13 @@ export const MetricalpReactProvider: React.FC<MetricalpProviderProps> = ({
   children = null,
   tid,
   customEventEndpoint,
+  customScriptUrl,
   allowLocalhost,
   allowCustomElmEvents,
   disableAutoRouteCatch,
   hashRouting,
 }) => {
-  useScript(SCRIPT_URL, {
+  useScript(customScriptUrl || SCRIPT_URL, {
     removeOnUnmount: false,
     customAttributes: {
       'data-tid': tid,
