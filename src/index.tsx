@@ -62,8 +62,8 @@ export const MetricalpReactProvider: React.FC<MetricalpProviderProps> = ({
       'data-tid': tid,
       'data-custom-event-endpoint': customEventEndpoint || undefined,
       'data-allow-localhost': allowLocalhost ? 'true' : 'false',
-      'data-allow-custom-elm-events': allowCustomElmEvents ? 'true' : 'false',
       'data-disable-auto-route-catch': disableAutoRouteCatch ? 'true' : 'false',
+      'data-disable-custom-elm-events': allowCustomElmEvents ? 'false' : 'true',
       'data-hash-routing': hashRouting ? 'true' : 'false',
     },
   });

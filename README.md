@@ -27,7 +27,7 @@ In `src/app/layout.tsx` import library
 
 `import { MetricalpReactProvider } from '@metricalp/react';`
 
-Then wrap your app with `<MetricalpReactProvider allowLocalhost tid='mamXXX'>`
+Then wrap your app with `<MetricalpReactProvider allowLocalhost tid='XXXXXX'>`
 
 **DON'T FORGET** to replace tid prop with your _tid_.
 
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MetricalpReactProvider allowLocalhost tid="mamXXX">
+        <MetricalpReactProvider allowLocalhost tid="XXXXXX">
             {children}
         </MetricalpReactProvider>
       </body>
@@ -69,7 +69,7 @@ In `src/pages/_app.tsx` import library
 
 `import { MetricalpReactProvider } from '@metricalp/react';`
 
-Then wrap your app with `<MetricalpReactProvider allowLocalhost tid='mamXXX'>`
+Then wrap your app with `<MetricalpReactProvider allowLocalhost tid='XXXXXX'>`
 
 **DON'T FORGET** to replace tid prop with your _tid_.
 
@@ -82,7 +82,7 @@ import { MetricalpReactProvider } from '@metricalp/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MetricalpReactProvider allowLocalhost tid="mamXXX">
+    <MetricalpReactProvider allowLocalhost tid="XXXXXX">
       <Component {...pageProps} />
     </MetricalpReactProvider>
   );
@@ -96,7 +96,7 @@ In `src/main.tsx` import library
 
 `import { MetricalpReactProvider } from '@metricalp/react';`
 
-Then wrap your app with `<MetricalpReactProvider allowLocalhost tid='mamXXX'>`
+Then wrap your app with `<MetricalpReactProvider allowLocalhost tid='XXXXXX'>`
 
 **DON'T FORGET** to replace tid prop with your _tid_.
 
@@ -111,7 +111,7 @@ import { App } from './App.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <MetricalpReactProvider allowLocalhost tid="mamXXX">
+    <MetricalpReactProvider allowLocalhost tid="XXXXXX">
       <App />
     </MetricalpReactProvider>
   </React.StrictMode>
@@ -178,7 +178,7 @@ In above examples we produce custom events with custom props. In your metricalp 
 
 ### Disabling Auto Route Catch
 
-Change `<MetricalpReactProvider allowLocalhost tid="mamXXX">` with `<MetricalpReactProvider allowLocalhost disableAutoRouteCatch tid="mamXXX">`.
+Change `<MetricalpReactProvider allowLocalhost tid="XXXXXX">` with `<MetricalpReactProvider allowLocalhost disableAutoRouteCatch tid="XXXXXX">`.
 
 
 #### Manual route tracking
